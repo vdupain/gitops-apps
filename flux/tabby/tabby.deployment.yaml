@@ -15,6 +15,12 @@ spec:
       labels:
         app: tabby
     spec:
+      tolerations:
+      - key: dedicated
+        operator: "Exists"
+        effect: "NoSchedule"
+      nodeSelector:
+        dedicated: highPerf
       containers:
         - args:
             - serve
