@@ -5,7 +5,7 @@ metadata:
   namespace: tabby
 spec:
   rules:
-  - host: tabby.k8s.oodev.io
+  - host: tabby.k8s.example.org
     http:
       paths:
       - path: /
