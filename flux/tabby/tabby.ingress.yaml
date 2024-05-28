@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: tabby
   namespace: tabby
+  annotations:
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
   - host: tabby.k8s.example.org
